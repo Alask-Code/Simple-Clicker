@@ -8,12 +8,36 @@
   </head>
   <body>
     <div class="game-container">
-      <div class="scoreboard">Pointter</div>
-      <button class="clicker">Tackler</button>
+      <header class="scoreboard">
+        <div class="score-value">
+          <div class="score-label">Points</div>
+          <div id="points">0</div>
+        </div>
+        <div class="stats">
+          <div id="clickPower">Power: 1</div>
+          <div id="critInfo">Crit: 10% x2</div>
+        </div>
+      </header>
+
+      <button id="clicker" class="clicker">
+        <span>Tap</span>
+      </button>
+
+      <div id="feedback" class="feedback">Welcome! Click the button to earn points.</div>
+      <button id="toggle-panel" class="toggle-panel">Hide upgrades & perks</button>
+
       <div class="panel">
-        <div class="upgrades">Updegrees</div>
-        <div class="perks">Perrkos</div>
+        <section class="card">
+          <div class="section-title">Upgrades</div>
+          <div id="upgrade-list" class="list"></div>
+        </section>
+        <section class="card">
+          <div class="section-title">Perks</div>
+          <div id="perk-list" class="list"></div>
+        </section>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
